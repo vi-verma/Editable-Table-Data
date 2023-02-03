@@ -77,6 +77,7 @@ const EditableTable = () => {
                 dataSource={tableData}
                 pagination={false}
             />
+            
             <div >
                 <Button type="primary" onClick={onConfirm}>
                     Save Data
