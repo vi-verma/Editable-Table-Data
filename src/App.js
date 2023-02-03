@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import 'antd/dist/reset.css';
+import EditableRowTable from './EditableRowTable';
+import EditableTable from './EditableTable';
+import TypeAhead from './TypeAhead';
+
+
+const App = () => {
+
+  return(
+    <div style={{ margin:'auto'}}>
+      <h2>Editable Table With AutoComplete and input field</h2>
+      <EditableTable />
+
+      <div >
+      <h2>Editable Table With input field after clicking Edit button</h2>
+
+        <EditableRowTable />
+      </div>
     </div>
   );
 }
+  
 
 export default App;
